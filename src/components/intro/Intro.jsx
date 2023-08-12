@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./intro.css";
 import Pic from "../../img/pic.png";
+import Dark from "../../img/dark.png";
+import { ThemeContext } from "../../context";
 
 export const Intro = () => {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <div className="i">
       <div className="i-left">
@@ -82,8 +86,11 @@ export const Intro = () => {
         </svg>
       </div>
       <div className="i-right">
-        <div className="i-bg"></div>
-        <img src={Pic} alt="" className="i-img" />
+        <div
+          className="i-bg"
+          style={{ backgroundColor: darkMode && "#1a3919" }}
+        ></div>
+        <img src={darkMode ? Dark : Pic} alt="" className="i-img" />
       </div>
     </div>
   );
