@@ -1,14 +1,32 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./contact.css";
 import Phone from "../../img/phone.png";
 import Email from "../../img/email.png";
 import Address from "../../img/address.png";
+import emailjs from "@emailjs/browser";
 
 export const Contact = () => {
   const formRef = useRef();
+  const [done, setDone] = useState(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    emailjs
+      .sendForm(
+        "service_8vog8zt",
+        "template_qjmsp6r",
+        formRef.current,
+        "pQItS_Wstq8TkmrAY"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setDone(true);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   return (
@@ -43,6 +61,7 @@ export const Contact = () => {
             <input type="text" placeholder="Email" name="user_email" />
             <textarea rows="5" placeholder="Message" name="message" />
             <button>Submit</button>
+            {done && "Thank you...Will Contact you soon."}
           </form>
         </div>
       </div>
