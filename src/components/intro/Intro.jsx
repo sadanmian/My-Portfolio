@@ -16,16 +16,16 @@ export const Intro = () => {
           <div className="i-title">
             <div className="i-title-wrapper">
               <div className="i-title-item">Web Developer</div>
-              <div className="i-title-item">UI/UX Designer</div>
-              <div className="i-title-item">Photographer</div>
-              <div className="i-title-item">Writer</div>
-              <div className="i-title-item">Content Creator</div>
+              <div className="i-title-item">JavaScript Expert</div>
+              <div className="i-title-item">Problem Solver</div>
+              <div className="i-title-item">Freelancer</div>
+              <div className="i-title-item">React Specialist</div>
             </div>
           </div>
           <p className="i-desc">
-            I design and develop services for customers of all sizes,
-            specializing in creating stylish, modern websites, web services and
-            online stores.
+            I'm a skilled front-end developer specializing in React, passionate
+            about crafting immersive and dynamic web experiences that seamlessly
+            blend design and functionality.
           </p>
         </div>
         <svg
