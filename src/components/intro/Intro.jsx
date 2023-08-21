@@ -3,6 +3,7 @@ import "./intro.css";
 import Pic from "../../img/pic.png";
 import Dark from "../../img/dark.png";
 import { ThemeContext } from "../../context";
+import { Facebook, GitHub, Instagram, LinkedIn } from "@mui/icons-material";
 
 export const Intro = () => {
   const theme = useContext(ThemeContext);
@@ -11,6 +12,40 @@ export const Intro = () => {
     <div className="i">
       <div className="i-left">
         <div className="i-left-wrapper">
+          <div className="i-left-mylinks">
+            <a
+              style={{ color: darkMode && "white" }}
+              className="links"
+              href="https://github.com/sadanmian"
+              target="_blank"
+            >
+              <GitHub className="socialLink" />
+            </a>
+            <a
+              style={{ color: darkMode && "white" }}
+              className="links"
+              href="https://www.linkedin.com/in/sadanmian/"
+              target="_blank"
+            >
+              <LinkedIn className="socialLink" />
+            </a>
+            <a
+              style={{ color: darkMode && "white" }}
+              className="links"
+              href="https://www.instagram.com/sadanmian"
+              target="_blank"
+            >
+              <Instagram className="socialLink" />
+            </a>
+            <a
+              style={{ color: darkMode && "white" }}
+              className="links"
+              href="https://www.facebook.com/sadanmian"
+              target="_blank"
+            >
+              <Facebook className="socialLink" />
+            </a>
+          </div>
           <h2 className="i-intro">Hello, This is</h2>
           <h1 className="i-name">Sadan Mian</h1>
           <div className="i-title">
