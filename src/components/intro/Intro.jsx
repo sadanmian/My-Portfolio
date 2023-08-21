@@ -28,7 +28,7 @@ export const Intro = () => {
             blend design and functionality.
           </p>
         </div>
-        <svg
+        {/* <svg
           width="75"
           height="75"
           viewBox="0 0 75 75"
@@ -83,7 +83,7 @@ export const Intro = () => {
               />
             </g>
           </g>
-        </svg>
+        </svg> */}
       </div>
       <div className="i-right">
         <div
