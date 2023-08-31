@@ -7,6 +7,7 @@ import Netflix from "./dataImg/Netflix.png";
 import SocialMedia from "./dataImg/social-media.png";
 import VideoShare from "./dataImg/video-sharing-app.png";
 import ReactWebsite from "./dataImg/react-website.png";
+import iNotebook from "./dataImg/iNotebook.png";
 
 export const products = [
   {
@@ -53,5 +54,10 @@ export const products = [
     id: 9,
     img: ReactWebsite,
     link: "https://github.com/sadanmian/react-website",
+  },
+  {
+    id: 10,
+    img: iNotebook,
+    link: "https://github.com/sadanmian/inotebook",
   },
 ];
